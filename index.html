@@ -1,0 +1,42 @@
+<!doctype html>
+<html> 
+        <head> 
+                <title>Simple Calculator</title>
+                <link rel="stylesheet" href="style.css"> 
+        </head> 
+ <body> 
+        <form class="calculator" name="calc"> 
+
+
+        <input class="value" type="text" name="screen" readonly>
+
+
+        <span id="clear" onclick="document.calc.screen.value=' '">AC</span>
+        <span onclick="document.calc.screen.value+='/'">÷</span>
+        <span onclick="document.calc.screen.value+='*'">×</span>
+        <span onclick="document.calc.screen.value=document.calc.screen.value.substring(0,document.calc.screen.value.length-1)">del</span> 
+
+
+        <span onclick="document.calc.screen.value+='7'">7</span> 
+        <span onclick="document.calc.screen.value+='8'">8</span>
+        <span onclick="document.calc.screen.value+='9'">9</span>
+        <span onclick="document.calc.screen.value+='-'">-</span>
+        
+        
+        <span onclick="document.calc.screen.value+='4'">4</span>
+        <span onclick="document.calc.screen.value+='5'">5</span>
+        <span onclick="document.calc.screen.value+='6'">6</span> 
+        <span onclick="document.calc.screen.value+='+'">+</span> 
+
+
+        <span onclick="document.calc.screen.value+='1'">1</span> 
+        <span onclick="document.calc.screen.value+='2'">2</span> 
+        <span onclick="document.calc.screen.value+='3'">3</span> 
+        <span id="equals" onclick="document.calc.screen.value=eval(document.calc.screen.value)">=</span>
+        <span id="zero" onclick="document.calc.screen.value+='0'">0</span>
+
+
+        <span onclick="document.calc.screen.value+='.'">.</span> 
+  </form> 
+ 
+</body></html>

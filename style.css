@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Poppins:wght@700&family=Ubuntu&display=swap');
+
+*
+{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Ubuntu', sans-serif;
+}
+
+body
+{
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(45deg,#202bc2,#cfd76d ); 
+}
+.calculator
+{
+        position: relative;
+        display: grid;
+}
+.calculator .value
+{
+        grid-column: span 4;
+        height: 80px;
+        width: 340px;
+        text-align: right;
+        border: none;
+        outline: none;
+        padding: 6px 12px;
+        font-size: 22px;
+}
+.calculator span
+{
+        display: grid;
+        width: 85px;
+        height: 80px;
+        color: #fff;
+        background: #075555;
+        place-items: center;
+        border: 1px solid rgba(0,0,0,0.1);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: 0.3s;
+}
+.calculator span:hover
+{
+        background: lime;
+        color: #111;
+        font-size: 22px;
+        transition: 0.3s;
+}
+.calculator span#equals
+{
+        grid-row: span 2;
+        height: 160px;
+        background: #5d9cd7;
+}
+.calculator span#clear
+{
+        background: #df34ae;
+}
+.calculator span#zero
+{
+        grid-column: span 2;
+        width: 170px;
+}
